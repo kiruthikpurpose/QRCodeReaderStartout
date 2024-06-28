@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "QR Code Scanner",
+    "version": "1.0",
+    "description": "Scan QR codes on web pages",
+    "permissions": [
+      "activeTab"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+  
